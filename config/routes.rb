@@ -1,3 +1,11 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  # get 'dvds/index'
+  # get 'dvds/show'
+  # get 'welcome/index', to: "welcome#index"
+
+  root 'welcome#index'
+  resources :dvds
+  # get    '/dvds/:id/new' to: "dvd#new"
+  # get '/dvds/:id(.:format)' to:  "dvd#show"
+
 end
